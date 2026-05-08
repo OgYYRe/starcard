@@ -42,7 +42,7 @@ export const cards = [
         title: "Ebu Huzeyfe bin Utbe (ra)",
         traits: [],
         revealName: "Ebu Huzeyfe bin Utbe (ra)",
-        revealText: "",
+        revealText: "Gözüpek ve korkusuz bir sahabi. Habeşistan'a giden ilk kafilede yer aldı",
         frontImage: cardfree,
         revealImage: cardfree
     },
@@ -96,7 +96,7 @@ export const cards = [
         title: "Bilâl-i Habeşî (r.a.)",
         traits: [],
         revealName: "Bilâl-i Habeşî (r.a.)",
-        revealText: "",
+        revealText: "İslam'ın ilk müezzini. Sadakat kahramanı.Kızgın çölde ilkence altında bile Ehad Ehad demesiyle hatırlanır",
         frontImage: cardfree,
         revealImage: cardfree
     },
@@ -105,7 +105,7 @@ export const cards = [
         title: "Mus’ab ibn Umeyr (ra)",
         traits: [],
         revealName: "Mus’ab ibn Umeyr (ra)",
-        revealText: "",
+        revealText: "Aksiyon, fedakarlık ve zühd sahibi. İslam'ın ilk öğretmeni. Uhud şehidi.",
         frontImage: cardfree,
         revealImage: cardfree
     },
