@@ -3,135 +3,72 @@ import cardfree from "../assets/cardfree.png";
 export const cards = [
     {
         id: 1,
-        title: "Hz. Ebû Bekir (r.a.) (Sıddîk)",
-        traits: ["Ornek ozellik", "Becerikli", "Sabirli", "Ilham verici"],
-        revealName: "Hz. Ebû Bekir (r.a.)",
-        revealText: "Bu kart sadece ornek olarak metinli gosterilir.",
+        title: "Ebu Bekir bin Kuhafe (ra)",
+        traits: [],
+        revealName: "Ebu Bekir bin Kuhafe (ra)",
+        revealText: "Sadakat, teslimiyet ve sıddıkiyet sahibi, ilk halife. Efendimiz'(asm) in hicret arkadaşı",
         frontImage: cardfree,
         revealImage: cardfree
     },
     {
         id: 2,
-        title: "Hz. Ömer (r.a.) (Fârûk)",
+        title: "Ebû Zer el-Gifâri (ra)",
         traits: [],
-        revealName: "Hz. Ömer (r.a.)",
-        revealText: "",
+        revealName: "Ebû Zer el-Gifâri (ra)",
+        revealText: "Cesaret sahibi. Kabilesinin yarısı onun sayesinde müslüman oldu. Efendimiz(asm) ona bazen \"dostum\" diye seslenirdi",
         frontImage: cardfree,
         revealImage: cardfree
     },
     {
         id: 3,
-        title: "Hz. Osman (r.a.) (Zinnûreyn)",
+        title: "Ali bin Ebu Talib (ra)",
         traits: [],
-        revealName: "Hz. Osman (r.a.)",
+        revealName: "Ali bin Ebu Talib (ra)",
         revealText: "",
         frontImage: cardfree,
         revealImage: cardfree
     },
     {
         id: 4,
-        title: "Hz. Ali (r.a.) (Haydar-ı Kerrar)",
+        title: "Cafer bin Ebu Talib (ra)",
         traits: [],
-        revealName: "Hz. Ali (r.a.)",
+        revealName: "Cafer bin Ebu Talib (ra)",
         revealText: "",
         frontImage: cardfree,
         revealImage: cardfree
     },
     {
         id: 5,
-        title: "Talhah bin Ubeydullah (r.a.) (Şehid-i Hayy)",
+        title: "Ebu Huzeyfe bin Utbe (ra)",
         traits: [],
-        revealName: "Talhah bin Ubeydullah (r.a.)",
+        revealName: "Ebu Huzeyfe bin Utbe (ra)",
         revealText: "",
         frontImage: cardfree,
         revealImage: cardfree
     },
     {
         id: 6,
-        title: "Zübeyr bin Avvam (r.a.) (Havârî)",
+        title: "Talha bin Ubeydullah (ra)",
         traits: [],
-        revealName: "Zübeyr bin Avvam (r.a.)",
+        revealName: "Talha bin Ubeydullah (ra)",
         revealText: "",
         frontImage: cardfree,
         revealImage: cardfree
     },
     {
         id: 7,
-        title: "Abdurrahman bin Avf (r.a.) (Cömertlerin Öncüsü)",
+        title: "Sa’d bin Ebu Vakkas (ra)",
         traits: [],
-        revealName: "Abdurrahman bin Avf (r.a.)",
+        revealName: "Sa’d bin Ebu Vakkas (ra)",
         revealText: "",
         frontImage: cardfree,
         revealImage: cardfree
     },
     {
         id: 8,
-        title: "Sa'd bin Ebi Vakkas (r.a.) (İlk Okçu)",
+        title: "Halid bin Velid (ra)",
         traits: [],
-        revealName: "Sa'd bin Ebi Vakkas (r.a.)",
-        revealText: "",
-        frontImage: cardfree,
-        revealImage: cardfree
-    },
-    {
-        id: 9,
-        title: "Ebu Ubeyde bin Cerrah (r.a.) (Emînü’l-Ümme)",
-        traits: [],
-        revealName: "Ebu Ubeyde bin Cerrah (r.a.)",
-        revealText: "",
-        frontImage: cardfree,
-        revealImage: cardfree
-    },
-    {
-        id: 10,
-        title: "Said bin Zeyd (r.a.) (Sessiz Mücahid)",
-        traits: [],
-        revealName: "Said bin Zeyd (r.a.)",
-        revealText: "",
-        frontImage: cardfree,
-        revealImage: cardfree
-    },
-    {
-        id: 11,
-        title: "Hz. Hatice (r.a.) (Tahire)",
-        traits: [],
-        revealName: "Hz. Hatice (r.a.)",
-        revealText: "",
-        frontImage: cardfree,
-        revealImage: cardfree
-    },
-    {
-        id: 12,
-        title: "Hz. Ayşe (r.a.) (Ümmü’l-Müminîn)",
-        traits: [],
-        revealName: "Hz. Ayşe (r.a.)",
-        revealText: "",
-        frontImage: cardfree,
-        revealImage: cardfree
-    },
-    {
-        id: 13,
-        title: "Hz. Hamza (r.a.) (Esedullah)",
-        traits: [],
-        revealName: "Hz. Hamza (r.a.)",
-        revealText: "",
-        frontImage: cardfree,
-        revealImage: cardfree
-    },
-    {
-        id: 14,
-        title: "Hz. Hâlid bin Velîd (r.a.) (Seyfullah)",
-        traits: [],
-        revealName: "Hz. Halid bin Velîd (r.a.)",
-        revealText: "",
-        frontImage: cardfree,
-        revealImage: cardfree
-    },
-    {
-        id: 15,
-        title: "",
-        traits: [],
-        revealName: "",
+        revealName: "Halid bin Velid (ra)",
         revealText: "",
         frontImage: cardfree,
         revealImage: cardfree
