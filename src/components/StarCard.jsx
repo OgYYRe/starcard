@@ -20,7 +20,9 @@ function StarCard({
         "Starcard Seçimim"
     )}&body=${encodeURIComponent(shareMessage)}`;
 
+    const hasTitle = Boolean(card.title?.trim());
     const hasTraits = Boolean(card.traits?.length);
+    const hasOverlay = hasTitle || hasTraits;
     const hasReveal = Boolean(name || text);
 
     const cardVisual = (
@@ -41,14 +43,18 @@ function StarCard({
                                 : undefined
                         }
                     >
-                        {hasTraits && (
+                        {hasOverlay && (
                             <div className="card-overlay">
-                                <h2 className="card-title">Yıldız Kart</h2>
-                                <ul className="traits">
-                                    {card.traits.map((trait, index) => (
-                                        <li key={index}>{trait}</li>
-                                    ))}
-                                </ul>
+                                {hasTitle && (
+                                    <h2 className="card-title">{card.title}</h2>
+                                )}
+                                {hasTraits && (
+                                    <ul className="traits">
+                                        {card.traits.map((trait, index) => (
+                                            <li key={index}>{trait}</li>
+                                        ))}
+                                    </ul>
+                                )}
                             </div>
                         )}
                     </div>

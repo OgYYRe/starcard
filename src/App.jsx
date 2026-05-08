@@ -27,6 +27,8 @@ function App() {
     const isConfirmed =
         selectedCard && confirmedCard && selectedCard.id === confirmedCard.id;
 
+    const shuffledCards = [...cards].sort(() => Math.random() - 0.5);
+
     return (
         <main className="app">
             <header className="top-bar">
@@ -38,7 +40,7 @@ function App() {
             </header>
 
             <section className={`card-grid ${selectedCard ? "dimmed" : ""}`}>
-                {cards.map((card) => (
+                {shuffledCards.map((card) => (
                     <StarCard
                         key={card.id}
                         card={card}
