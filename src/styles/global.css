@@ -140,6 +140,7 @@ body::after {
     }
 
     .card-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(140px, 1fr));
+        gap: 18px;
     }
 }
