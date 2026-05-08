@@ -33,7 +33,7 @@ export const cards = [
         title: "Cafer bin Ebu Talib (ra)",
         traits: [],
         revealName: "Cafer bin Ebu Talib (ra)",
-        revealText: "",
+        revealText: "Mute Savaşı kahramanı, şehit. Efendimiz (asm) onun hakkında \"Ben onu cennette meleklerle beraber uçarken gördüm\" demiştir.",
         frontImage: cardfree,
         revealImage: cardfree
     },
@@ -78,7 +78,7 @@ export const cards = [
         title: "Ömer bin el-Hattâb (ra)",
         traits: [],
         revealName: "Ömer bin el-Hattâb (ra)",
-        revealText: "",
+        revealText: "Adalet, ibadet, tefekkür ve ideal yönetici. Efendimiz (asm) onun hakkında \"Benden sonra peygamber gelseydi o olurdu\" demiştir",
         frontImage: cardfree,
         revealImage: cardfree
     },
@@ -87,7 +87,7 @@ export const cards = [
         title: "Osman bin Affan (ra)",
         traits: [],
         revealName: "Osman bin Affan (ra)",
-        revealText: "",
+        revealText: "Haya, edep, nezaket sahibi. Zinnureyn olarak tanınır. Kur'an okurken şehit edildi.",
         frontImage: cardfree,
         revealImage: cardfree
     },
