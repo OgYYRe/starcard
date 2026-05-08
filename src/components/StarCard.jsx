@@ -91,6 +91,14 @@ function StarCard({
 
     return (
         <div className="modal-card-wrap">
+            <button
+                type="button"
+                className="close-button"
+                onClick={onCancel}
+                aria-label="Kapat"
+            >
+                ×
+            </button>
             {cardVisual}
             {!isConfirmed ? (
                 <div className="modal-actions">
