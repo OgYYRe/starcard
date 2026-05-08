@@ -1,4 +1,6 @@
 import cardfree from "../assets/cardfree.png";
+import id11a from "../assets/id11a.png";
+import id11b from "../assets/id11b.png";
 
 export const cards = [
     {
@@ -97,8 +99,8 @@ export const cards = [
         traits: [],
         revealName: "Bilâl-i Habeşî (r.a.)",
         revealText: "İslam'ın ilk müezzini. Sadakat kahramanı.Kızgın çölde ilkence altında bile Ehad Ehad demesiyle hatırlanır",
-        frontImage: cardfree,
-        revealImage: cardfree
+        frontImage: id11a,
+        revealImage: id11b
     },
     {
         id: 12,
