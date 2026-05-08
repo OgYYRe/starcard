@@ -6,7 +6,7 @@ export const cards = [
         title: "Ebu Bekir bin Kuhafe (ra)",
         traits: [],
         revealName: "Ebu Bekir bin Kuhafe (ra)",
-        revealText: "Sadakat, teslimiyet ve sıddıkiyet sahibi, ilk halife. Efendimiz'(asm) in hicret arkadaşı",
+        revealText: "Sadakat, teslimiyet ve sıddıkiyet sahibi, ilk halife. Efendimiz'(asm) in hicret arkadaşı.",
         frontImage: cardfree,
         revealImage: cardfree
     },
@@ -15,7 +15,7 @@ export const cards = [
         title: "Ebû Zer el-Gifâri (ra)",
         traits: [],
         revealName: "Ebû Zer el-Gifâri (ra)",
-        revealText: "Cesaret sahibi. Kabilesinin yarısı onun sayesinde müslüman oldu. Efendimiz(asm) ona bazen \"dostum\" diye seslenirdi",
+        revealText: "Cesaret sahibi. Kabilesinin yarısı onun sayesinde müslüman oldu. Efendimiz(asm) ona bazen \"dostum\" diye seslenirdi.",
         frontImage: cardfree,
         revealImage: cardfree
     },
@@ -24,7 +24,7 @@ export const cards = [
         title: "Ali bin Ebu Talib (ra)",
         traits: [],
         revealName: "Ali bin Ebu Talib (ra)",
-        revealText: "",
+        revealText: "İlim, cesaret, takva, kahramanlık sahibi. Damad-ı Nebi olarak tanınır. Zülfikar adlı kılıç onundur",
         frontImage: cardfree,
         revealImage: cardfree
     },
@@ -69,6 +69,78 @@ export const cards = [
         title: "Halid bin Velid (ra)",
         traits: [],
         revealName: "Halid bin Velid (ra)",
+        revealText: "",
+        frontImage: cardfree,
+        revealImage: cardfree
+    },
+    {
+        id: 9,
+        title: "Ömer bin el-Hattâb (ra)",
+        traits: [],
+        revealName: "Ömer bin el-Hattâb (ra)",
+        revealText: "",
+        frontImage: cardfree,
+        revealImage: cardfree
+    },
+    {
+        id: 10,
+        title: "Osman bin Affan (ra)",
+        traits: [],
+        revealName: "Osman bin Affan (ra)",
+        revealText: "",
+        frontImage: cardfree,
+        revealImage: cardfree
+    },
+    {
+        id: 11,
+        title: "Bilâl-i Habeşî (r.a.)",
+        traits: [],
+        revealName: "Bilâl-i Habeşî (r.a.)",
+        revealText: "",
+        frontImage: cardfree,
+        revealImage: cardfree
+    },
+    {
+        id: 12,
+        title: "Mus’ab ibn Umeyr (ra)",
+        traits: [],
+        revealName: "Mus’ab ibn Umeyr (ra)",
+        revealText: "",
+        frontImage: cardfree,
+        revealImage: cardfree
+    },
+    {
+        id: 13,
+        title: "Hz. Âişe (r.anha)",
+        traits: [],
+        revealName: "Hz. Âişe (r.anha)",
+        revealText: "",
+        frontImage: cardfree,
+        revealImage: cardfree
+    },
+    {
+        id: 14,
+        title: "Hatice binti Huveylid (r.anha)",
+        traits: [],
+        revealName: "Hatice binti Huveylid (r.anha)",
+        revealText: "",
+        frontImage: cardfree,
+        revealImage: cardfree
+    },
+    {
+        id: 15,
+        title: "Ümmü Seleme (r.anha)",
+        traits: [],
+        revealName: "Ümmü Seleme (r.anha)",
+        revealText: "",
+        frontImage: cardfree,
+        revealImage: cardfree
+    },
+    {
+        id: 16,
+        title: "Fatıma binti Muhammed (sav) (r.anha)",
+        traits: [],
+        revealName: "Fatıma binti Muhammed (sav) (r.anha)",
         revealText: "",
         frontImage: cardfree,
         revealImage: cardfree
