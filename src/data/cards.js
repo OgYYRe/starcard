@@ -106,8 +106,8 @@ export const cards = [
     },
     {
         id: 7,
-        title: "Sa’d bin Ebu Vakkas (ra)",
-        traits: [],
+        title: "Dayı",
+        traits: ["Okçuluk", ],
         revealName: "Sa’d bin Ebu Vakkas (ra)",
         revealText: "Okçuluğu meşhurdur. Efendimiz (asm) Uhud'da kendisine \"Anam babam sana feda olsun\" demiştir. Aşere-i Mübeşşere'den.",
         frontImage: id7a,
