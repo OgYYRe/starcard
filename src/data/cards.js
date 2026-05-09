@@ -115,8 +115,8 @@ export const cards = [
     },
     {
         id: 8,
-        title: "Halid bin Velid (ra)",
-        traits: [],
+        title: "Allah'ın kılıcı, Seyfullah",
+        traits: ["Askeri deha", ],
         revealName: "Halid bin Velid (ra)",
         revealText: "Seyfullah (Allah'ın kılıcı) olarak tanınır. Cesaret, cihad ve askeri deha.",
         frontImage: id8a,
@@ -124,7 +124,7 @@ export const cards = [
     },
     {
         id: 9,
-        title: "Ömer bin el-Hattâb (ra)",
+        title: "Faruk-ı Azam, El-Fârûk",
         traits: ["Adalet", "Güç", "İdeal Yönetici"],
         revealName: "Ömer bin el-Hattâb (ra)",
         revealText: "Adalet, ibadet, tefekkür ve ideal yönetici. Efendimiz (asm) onun hakkında \"Benden sonra peygamber gelseydi o olurdu\" demiştir",
@@ -134,7 +134,7 @@ export const cards = [
     {
         id: 10,
         title: "Osman bin Affan (ra)",
-        traits: [],
+        traits: ["Edep", "Nezaket", "Haya"],
         revealName: "Osman bin Affan (ra)",
         revealText: "Haya, edep, nezaket sahibi. Zinnureyn olarak tanınır. Kur'an okurken şehit edildi.",
         frontImage: id10a,
