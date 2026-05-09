@@ -89,7 +89,7 @@ export const cards = [
     {
         id: 5,
         title: "Ebu Huzeyfe bin Utbe (ra)",
-        traits: [],
+        traits: ["Korkusuz"],
         revealName: "Ebu Huzeyfe bin Utbe (ra)",
         revealText: "Gözüpek ve korkusuz bir sahabi. Habeşistan'a giden ilk kafilede yer aldı.",
         frontImage: id5a,
@@ -97,8 +97,8 @@ export const cards = [
     },
     {
         id: 6,
-        title: "Talha bin Ubeydullah (ra)",
-        traits: [],
+        title: "Yaşayan Şehit",
+        traits: ["Cömertlik", "Cesaret", "Vefa"],
         revealName: "Talha bin Ubeydullah (ra)",
         revealText: "Uhud'un kahramanlarından. Cömertlik ve vefa sahibi. Aşere-i Mübeşşere'den.",
         frontImage: id6a,
@@ -125,7 +125,7 @@ export const cards = [
     {
         id: 9,
         title: "Ömer bin el-Hattâb (ra)",
-        traits: [],
+        traits: ["Adalet", "Güç", "İdeal Yönetici"],
         revealName: "Ömer bin el-Hattâb (ra)",
         revealText: "Adalet, ibadet, tefekkür ve ideal yönetici. Efendimiz (asm) onun hakkında \"Benden sonra peygamber gelseydi o olurdu\" demiştir",
         frontImage: id9a,
