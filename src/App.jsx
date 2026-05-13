@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import StarCard from "./components/StarCard";
 import { cards } from "./data/cards";
 import "./styles/global.css";
+import PrizeBanner from "./components/PrizeBanner";
 
 function App() {
     const [selectedCard, setSelectedCard] = useState(null);
@@ -38,6 +39,7 @@ function App() {
                 </div>
                 <p className="slogan">Ashâbım yıldızlar gibidir. Hangisine tâbi olsanız hidayete erersiniz.</p>
             </header>
+            <PrizeBanner />
 
             <section className={`card-grid ${selectedCard ? "dimmed" : ""}`}>
                 {shuffledCards.map((card) => (
@@ -49,6 +51,7 @@ function App() {
                     />
                 ))}
             </section>
+
 
             <AnimatePresence>
                 {selectedCard && (
@@ -78,6 +81,8 @@ function App() {
                     </motion.div>
                 )}
             </AnimatePresence>
+
+
         </main>
     );
 }
