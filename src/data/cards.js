@@ -71,7 +71,7 @@ export const cards = [
     {
         id: 3,
         title: "Damad-ı Nebi",
-        traits: ["İlim", "Cesaret", "Takva", "Kahramanlık"],
+        traits: ["İlim", "Zülfikar", "Takva", "Cesaret"],
         revealName: "Ali bin Ebu Talib (ra)",
         revealText: "İlim, cesaret, takva, kahramanlık sahibi. Damad-ı Nebi olarak tanınır. Zülfikar adlı kılıç onundur.",
         source: "https://drive.google.com/file/d/1s4scUHm-rRyMLjQxfHfhd3jzZ342tmdV/view",
@@ -81,7 +81,7 @@ export const cards = [
     {
         id: 4,
         title: "Zü'l-Cenâhayn",
-        traits: ["Cesaret", "Fedakarlık"],
+        traits: ["Cesaret", "Fedakarlık","Mute Şehidi"],
         revealName: "Cafer bin Ebu Talib (ra)",
         revealText: "Mute Savaşı kahramanı, şehit. Efendimiz (asm) onun hakkında \"Ben onu cennette meleklerle beraber uçarken gördüm\" demiştir.",
         source: "https://drive.google.com/file/d/16yc3DQ3Dmfmkt71ggS4FjAmPVfZDT1kL/view",
@@ -91,7 +91,7 @@ export const cards = [
     {
         id: 5,
         title: "Ebu Huzeyfe",
-        traits: ["Korkusuz, Gözüpek"],
+        traits: ["Korkusuz", "Gözüpek", "Bedir Ashabından"],
         revealName: "Ebu Huzeyfe bin Utbe (ra)",
         revealText: "Gözüpek ve korkusuz bir sahabi. Habeşistan'a giden ilk kafilede yer aldı.",
         source: "https://drive.google.com/file/d/17o1b8qKafrzWbyZqjLxX0z1xSUD4Sa4j/view",
@@ -101,7 +101,7 @@ export const cards = [
     {
         id: 6,
         title: "Yaşayan Şehit",
-        traits: ["Cömertlik", "Cesaret", "Vefa"],
+        traits: ["Uhud Kahramanı", "Cesaret", "Vefa"],
         revealName: "Talha bin Ubeydullah (ra)",
         revealText: "Uhud'un kahramanlarından. Cömertlik ve vefa sahibi. Aşere-i Mübeşşere'den.",
         source: "https://drive.google.com/file/d/1E37rdf2-mTkuun_c0e1O4M4Bw6xOzPgE/view",
@@ -111,7 +111,7 @@ export const cards = [
     {
         id: 7,
         title: "Dayı",
-        traits: ["İyi Bir Okçu" ],
+        traits: ["Büyük Okçu", "Kadisiye Komutanı","Aşere-i Mübeşşere'den" ],
         revealName: "Sa’d bin Ebu Vakkas (ra)",
         revealText: "Okçuluğu meşhurdur. Efendimiz (asm) Uhud'da kendisine \"Anam babam sana feda olsun\" demiştir. Aşere-i Mübeşşere'den.",
         source: "https://drive.google.com/file/d/1-X2eiBTK4tTooAGzZ8QWB5Dly2n63vjI/view",
@@ -121,7 +121,7 @@ export const cards = [
     {
         id: 8,
         title: "Allah'ın Kılıcı (Seyfullah)",
-        traits: ["Askeri deha", ],
+        traits: ["Askeri Deha", "Yenilgisiz Komutan", "Yermük Fatihi" ],
         revealName: "Halid bin Velid (ra)",
         revealText: "Seyfullah (Allah'ın kılıcı) olarak tanınır. Cesaret, cihad ve askeri deha.",
         source: "https://drive.google.com/file/d/1-8TabIEoyuxRbsky4yxO_Ifd_F00R-B6/view",
@@ -131,7 +131,7 @@ export const cards = [
     {
         id: 9,
         title: "Faruk-ı Azam, El-Fârûk",
-        traits: ["Adalet", "Güç", "İdeal Yönetici"],
+        traits: ["Adalet", "Heybet", "İdeal Yönetici"],
         revealName: "Ömer bin el-Hattâb (ra)",
         revealText: "Adalet, ibadet, tefekkür ve ideal yönetici. Efendimiz (asm) onun hakkında \"Benden sonra peygamber gelseydi o olurdu\" demiştir",
         source: "https://drive.google.com/file/d/13PaNeAoWKx4jUrJ01l1qJ0J7gP_N3zE2/view",
@@ -151,9 +151,9 @@ export const cards = [
     {
         id: 11,
         title: "İlk Müezzin",
-        traits: ["Sadakat", "Sabır", "Teslimiyet"],
+        traits: ["Ehad Ehad", "Sabır", "Teslimiyet"],
         revealName: "Bilâl-i Habeşî (r.a.)",
-        revealText: "İslam'ın ilk müezzini. Kızgın çölde ilkence altında bile Ehad Ehad diyerek sadakat ve teslimiyet gösterdi.",
+        revealText: "İslam'ın ilk müezzini. Kızgın çölde işkence altında bile Ehad Ehad diyerek sadakat ve teslimiyet gösterdi.",
         source: "https://drive.google.com/file/d/1dN9Fo66mH8qNn-JaC2_tTRwu51sE9SsO/view",
         frontImage: id11a,
         revealImage: id11b
@@ -161,7 +161,7 @@ export const cards = [
     {
         id: 12,
         title: "Muallim-i Evvel",
-        traits: ["Zenginlikten fedakarlık", "İlk ögretmen", "Uhud şehidi"],
+        traits: ["Asil Genç","Zenginlikten Fedakarlık", "Uhud Şehidi"],
         revealName: "Mus’ab ibn Umeyr (ra)",
         revealText: "Aksiyon, fedakarlık ve zühd sahibi. İslam'ın ilk öğretmeni. Uhud şehidi.",
         source: "https://drive.google.com/file/d/1us22YEyrwO1sJje0tVEBmrxbAOWCDIFh/view",
@@ -171,7 +171,7 @@ export const cards = [
     {
         id: 13,
         title: "Es-Sıddîka ",
-        traits: ["Hadis Rivayeti", "İffet", "İbadet"],
+        traits: ["Hadis Rivayeti", "Fakih", "İffet"],
         revealName: "Hz. Âişe (r.anha)",
         revealText: "İlim, iffet, ibadet abidesi. Kadınlık aleminin mürşidesi, sünnetin nakilcisi.",
         source: "https://drive.google.com/file/d/17XSJB0mTFZUk3N5zlWubzGkihmyLkAhL/view",
@@ -181,7 +181,7 @@ export const cards = [
     {
         id: 14,
         title: "Tâhire",
-        traits: ["İlk Müslüman kadın", "Müminlerin annesi", "Fedakarlık"],
+        traits: ["İlk Müslüman Kadın", "Müminlerin Annesi", "Fedakarlık"],
         revealName: "Hatice binti Huveylid (r.anha)",
         revealText: "Sadakat, fedakarlık ve teslimiyet sahibi. Efendimiz'e (asm) ilk iman eden kadın. Bütün servetini İslam yolunda harcadı.",
         source: "https://drive.google.com/file/d/1zvjmq-5XMLLi3GcqoAAPqI0_FTR2A6G0/view",
@@ -191,7 +191,7 @@ export const cards = [
     {
         id: 15,
         title: "Hicret Kahramanı",
-        traits: ["Sabır", "Tevekkül", "Şefkat"],
+        traits: ["Hicret", "Tevekkül", "Feraset"],
         revealName: "Ümmü Seleme (r.anha)",
         revealText: "Sabır, şefkat, ibadet ve tevekkül sahibi. Mü'minlerin annesi olarak bilinir.",
         source: "https://drive.google.com/file/d/1wUloNil-kIIG3LsGTB41jZxrFe3lhWul/view",
@@ -201,7 +201,7 @@ export const cards = [
     {
         id: 16,
         title: "Cennet Kadınlarının Efendisi",
-        traits: ["Takva", "Zühd", "Fedakarlık"],
+        traits: ["Takva", "Haya", "Ehl-i Beyt"],
         revealName: "Fatıma binti Muhammed (sav) (r.anha)",
         revealText:  "Ahlak, zühd, takva, fedakarlık sahibi. Cennet kadınlarından biri. Efendimiz (asm) in soyu ondan devam etmiştir.",
         source: "https://drive.google.com/file/d/1BxuyjbWLSCsg3tSg3hIcmGuLed-GjoAF/view",
