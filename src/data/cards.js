@@ -62,7 +62,7 @@ export const cards = [
     },
     {
         id: 2,
-        title: "Doğru sözlü zâhid",
+        title: "Doğru Sözlü Zâhid",
         traits: ["Cesaret", "Zühd", "Hakperestlik"],
         revealName: "Ebû Zer el-Gifâri (ra)",
         revealText: "Cesaret ve zühd sahibi. Kabilesinin yarısı onun sayesinde müslüman oldu. Efendimiz(asm) ona bazen \"dostum\" diye seslenirdi.",
@@ -82,7 +82,7 @@ export const cards = [
     },
     {
         id: 4,
-        title: "Cafer bin Ebu Talib (ra)",
+        title: "Zü'l-Cenâhayn",
         traits: ["Cesaret", "Fedakarlık"],
         revealName: "Cafer bin Ebu Talib (ra)",
         revealText: "Mute Savaşı kahramanı, şehit. Efendimiz (asm) onun hakkında \"Ben onu cennette meleklerle beraber uçarken gördüm\" demiştir.",
@@ -92,7 +92,7 @@ export const cards = [
     },
     {
         id: 5,
-        title: "Ebu Huzeyfe bin Utbe (ra)",
+        title: "Ebu Huzeyfe",
         traits: ["Korkusuz"],
         revealName: "Ebu Huzeyfe bin Utbe (ra)",
         revealText: "Gözüpek ve korkusuz bir sahabi. Habeşistan'a giden ilk kafilede yer aldı.",
@@ -122,7 +122,7 @@ export const cards = [
     },
     {
         id: 8,
-        title: "Allah'ın kılıcı, Seyfullah",
+        title: "Allah'ın Kılıcı, Seyfullah",
         traits: ["Askeri deha", ],
         revealName: "Halid bin Velid (ra)",
         revealText: "Seyfullah (Allah'ın kılıcı) olarak tanınır. Cesaret, cihad ve askeri deha.",
@@ -142,7 +142,7 @@ export const cards = [
     },
     {
         id: 10,
-        title: "Osman bin Affan (ra)",
+        title: "Zinnûreyn",
         traits: ["Edep", "Nezaket", "Haya"],
         revealName: "Osman bin Affan (ra)",
         revealText: "Haya, edep, nezaket sahibi. Zinnureyn olarak tanınır. Kur'an okurken şehit edildi.",
@@ -172,7 +172,7 @@ export const cards = [
     },
     {
         id: 13,
-        title: "Hz. Âişe (r.anha)",
+        title: "Es-Sıddîka ",
         traits: [],
         revealName: "Hz. Âişe (r.anha)",
         revealText: "İlim, iffet, ibadet abidesi. Kadınlık aleminin mürşidesi,sünnetin nakilcisi.",
@@ -192,7 +192,7 @@ export const cards = [
     },
     {
         id: 15,
-        title: "Hicret kahramanı",
+        title: "Hicret Kahramanı",
         traits: ["Sabır", "Tevekkül", "Şefkat"],
         revealName: "Ümmü Seleme (r.anha)",
         revealText: "Sabır, şefkat, ibadet ve tevekkül sahibi. Mü'minlerin annesi olarak bilinir.",
@@ -202,7 +202,7 @@ export const cards = [
     },
     {
         id: 16,
-        title: "Cennet kadınlarının efendisi",
+        title: "Cennet Kadınlarının Efendisi",
         traits: ["Takva", "Zühd", "Fedakarlık"],
         revealName: "Fatıma binti Muhammed (sav) (r.anha)",
         revealText:  "Ahlak, zühd, takva, fedakarlık sahibi. Cennet kadınlarından biri. Efendimiz (asm) in soyu ondan devam etmiştir.",
