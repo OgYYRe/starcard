@@ -7,18 +7,12 @@ function StarCard({
     isConfirmed = false,
     onSelect,
     onConfirm,
-    onCancel
+    onCancel,
+    disabled = false,
+    whatsappUrl
 }) {
     const name = card.revealName?.trim();
     const text = card.revealText?.trim();
-    const shareMessage =
-        name || text
-            ? `Benim kartım: ${name || "Starcard"}. ${text || ""}`.trim()
-            : "Starcard seçimim.";
-    const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(shareMessage)}`;
-    const mailUrl = `mailto:?subject=${encodeURIComponent(
-        "Starcard Seçimim"
-    )}&body=${encodeURIComponent(shareMessage)}`;
 
     const hasTitle = Boolean(card.title?.trim());
     const hasTraits = Boolean(card.traits?.length);
@@ -28,7 +22,7 @@ function StarCard({
     const cardVisual = (
         <div
             className={`star-card ${variant === "modal" ? "modal-card" : ""} ${
-                isConfirmed ? "flipped" : ""
+                isConfirmed ? "flipped confirmed" : ""
             }`}
         >
             <div className="card-inner">
@@ -87,8 +81,13 @@ function StarCard({
             <motion.button
                 type="button"
                 className="card-wrap"
-                whileHover={{ scale: 1.05, y: -10 }}
-                onClick={() => onSelect(card)}
+                whileHover={disabled ? undefined : { scale: 1.05, y: -10 }}
+                onClick={() => {
+                    if (!disabled) {
+                        onSelect(card);
+                    }
+                }}
+                disabled={disabled}
             >
                 {cardVisual}
             </motion.button>
@@ -127,10 +126,7 @@ function StarCard({
                         target="_blank"
                         rel="noreferrer"
                     >
-                        WhatsApp ile gönder
-                    </a>
-                    <a className="action-button ghost" href={mailUrl}>
-                        Mail ile gönder
+                        WP ile katılımı tamamla
                     </a>
                 </div>
             )}
@@ -139,4 +135,3 @@ function StarCard({
 }
 
 export default StarCard;
-

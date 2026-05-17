@@ -1,0 +1,99 @@
+.participation {
+    width: min(760px, 100%);
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(12, 18, 32, 0.8);
+    border: 1px solid rgba(214, 179, 90, 0.25);
+    box-shadow: 0 16px 40px rgba(5, 8, 20, 0.35);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.participation__header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.participation__header h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.participation__header span {
+    font-size: 14px;
+    color: rgba(247, 231, 176, 0.7);
+}
+
+.participation__fields {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    color: rgba(247, 231, 176, 0.9);
+}
+
+.form-field input {
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(214, 179, 90, 0.3);
+    background: rgba(6, 10, 20, 0.8);
+    color: #f7e7b0;
+    outline: none;
+}
+
+.form-field input:focus {
+    border-color: rgba(214, 179, 90, 0.8);
+    box-shadow: 0 0 0 2px rgba(214, 179, 90, 0.2);
+}
+
+.form-hint {
+    margin: 0;
+    font-size: 13px;
+    color: rgba(247, 231, 176, 0.7);
+}
+
+.participation__button {
+    border: none;
+    cursor: pointer;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 15px;
+    background: linear-gradient(135deg, #d6b35a, #f2d287);
+    color: #0b1224;
+    box-shadow: 0 12px 30px rgba(214, 179, 90, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    align-self: flex-start;
+}
+
+.participation__button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    box-shadow: none;
+}
+
+.participation__button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 36px rgba(214, 179, 90, 0.3);
+}
+
+@media (max-width: 740px) {
+    .participation__fields {
+        grid-template-columns: 1fr;
+    }
+
+    .participation__button {
+        width: 100%;
+        align-self: stretch;
+    }
+}
+

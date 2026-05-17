@@ -1,10 +1,19 @@
 import "./PrizeBanner.css";
 
 function PrizeBanner() {
-    const participantCount = 4; // Bu değeri gerçek katılımcı sayısına göre dinamik olarak güncelleyin
+    const participantCount = 0;
     const maxParticipants = 15;
     const cappedCount = Math.min(Math.max(participantCount, 0), maxParticipants);
     const progressPercent = Math.round((cappedCount / maxParticipants) * 100);
+
+    const nextThresholdNote =
+        participantCount < 5
+            ? `İlk ödül seviyesinin açılması için ${5 - participantCount} kişi daha gerekli.`
+            : participantCount < 10
+              ? `Sonraki ödül seviyesinin açılması için ${10 - participantCount} kişi daha gerekli.`
+              : participantCount < 15
+                ? `Sonraki ödül seviyesinin açılması için ${15 - participantCount} kişi daha gerekli.`
+                : "Maksimum ödül barajına ulaşıldı.";
 
     const rewards =
         participantCount >= 15
@@ -23,13 +32,6 @@ function PrizeBanner() {
               : participantCount < 15
                 ? "Ödül seviyesi: 10-14 kişi"
                 : "Ödül seviyesi: 15+ kişi";
-
-    const whatsappNumber = "905555555555";
-    const whatsappMessage =
-        "Selam, Starcard bilgi yarışması hakkında bilgi almak istiyorum.";
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-        whatsappMessage
-    )}`;
 
     return (
         <section className="prize-banner">
@@ -76,6 +78,9 @@ function PrizeBanner() {
                     <div className="prize-banner__inactive">
                         <p>Ödüller henüz aktif değil.</p>
                         <p className="muted">5 kişiye ulaşınca ödüller başlar.</p>
+                        {nextThresholdNote && (
+                            <p className="next-level">{nextThresholdNote}</p>
+                        )}
                     </div>
                 ) : (
                     <div className="prize-cards">
@@ -97,19 +102,9 @@ function PrizeBanner() {
                     </div>
                 )}
 
-                <div className="prize-banner__actions">
-                    <button type="button" className="prize-button primary">
-                        Yarışmaya Katıl
-                    </button>
-                    <a
-                        className="prize-button ghost"
-                        href={whatsappUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        Detayları WhatsApp ile Sor
-                    </a>
-                </div>
+                {rewards && nextThresholdNote && (
+                    <p className="next-level">{nextThresholdNote}</p>
+                )}
             </div>
         </section>
     );

@@ -1,15 +1,37 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import StarCard from "./components/StarCard";
+import PrizeBanner from "./components/PrizeBanner";
+import ContestInfo from "./components/ContestInfo";
+import ParticipationForm from "./components/ParticipationForm";
 import { cards } from "./data/cards";
 import "./styles/global.css";
-import PrizeBanner from "./components/PrizeBanner";
 
 function App() {
     const [selectedCard, setSelectedCard] = useState(null);
     const [confirmedCard, setConfirmedCard] = useState(null);
+    const [step, setStep] = useState("info");
+    const [studentName, setStudentName] = useState("");
+    const [mentorName, setMentorName] = useState("");
+
+    const isFormValid = Boolean(studentName.trim() && mentorName.trim());
+    const showRewards = step !== "info";
+    const showCards = step === "cards";
+
+    const handleJoin = () => {
+        setStep("rewards");
+    };
+
+    const handleShowCards = () => {
+        if (isFormValid) {
+            setStep("cards");
+        }
+    };
 
     const handleSelect = (card) => {
+        if (!isFormValid) {
+            return;
+        }
         setSelectedCard(card);
         setConfirmedCard(null);
     };
@@ -28,30 +50,74 @@ function App() {
     const isConfirmed =
         selectedCard && confirmedCard && selectedCard.id === confirmedCard.id;
 
-    const shuffledCards = [...cards].sort(() => Math.random() - 0.5);
+    const shuffledCards = useMemo(
+        () => [...cards].sort(() => Math.random() - 0.5),
+        []
+    );
+
+    const whatsappNumber = "+41779179855";
+    const selectedName = selectedCard?.revealName?.trim() || "Starcard";
+    const selectedSource = selectedCard?.source?.trim() || "kaynak belirtilmedi";
+    const whatsappMessage = `Merhaba Oğuzhan abi, benim adım ${studentName.trim()}.
+${mentorName.trim()} abinin öğrencisiyim.
+Yarışmaya katılıyorum ve benim seçtiğim yıldız: ${selectedName}.
+Katılımcı sayısına beni de dahil edebilir misin?
+Ayrıca kaynak olarak 
+${selectedSource} 
+linkini kullanacağım.
+
+Ayrıca, tüm Sahabelere bu PDF den ulasabilecegimi biliyorum
+www.abc.com/sahabeler.pdf
+Teşekkürler!
+`;
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+        whatsappMessage
+    )}`;
 
     return (
         <main className="app">
-            <header className="top-bar">
-                <div className="brand">
-                    <span className="brand-title">STARCARD</span>
-                    <span className="brand-subtitle">İlham Veren Yıldızlar</span>
-                </div>
-                <p className="slogan">Ashâbım yıldızlar gibidir. Hangisine tâbi olsanız hidayete erersiniz.</p>
-            </header>
-            <PrizeBanner />
+            {step !== "cards" && (
+                <header className="top-bar">
+                    <div className="brand">
+                        <span className="brand-title">STARCARD</span>
+                        <span className="brand-subtitle">İlham Veren Yıldızlar</span>
+                    </div>
+                    <p className="slogan">
+                        Ashâbım yıldızlar gibidir. Hangisine tâbi olsanız hidayete
+                        erersiniz.
+                    </p>
+                </header>
+            )}
 
-            <section className={`card-grid ${selectedCard ? "dimmed" : ""}`}>
-                {shuffledCards.map((card) => (
-                    <StarCard
-                        key={card.id}
-                        card={card}
-                        variant="grid"
-                        onSelect={handleSelect}
+            {step === "info" && <ContestInfo onJoin={handleJoin} />}
+
+            {showRewards && step !== "cards" && (
+                <>
+                    <PrizeBanner />
+                    <ParticipationForm
+                        studentName={studentName}
+                        mentorName={mentorName}
+                        onStudentNameChange={setStudentName}
+                        onMentorNameChange={setMentorName}
+                        onShowCards={handleShowCards}
+                        isFormValid={isFormValid}
                     />
-                ))}
-            </section>
+                </>
+            )}
 
+            {showCards && (
+                <section className={`card-grid ${selectedCard ? "dimmed" : ""}`}>
+                    {shuffledCards.map((card) => (
+                        <StarCard
+                            key={card.id}
+                            card={card}
+                            variant="grid"
+                            onSelect={handleSelect}
+                            disabled={!isFormValid}
+                        />
+                    ))}
+                </section>
+            )}
 
             <AnimatePresence>
                 {selectedCard && (
@@ -76,12 +142,12 @@ function App() {
                                 isConfirmed={Boolean(isConfirmed)}
                                 onConfirm={handleConfirm}
                                 onCancel={handleCancel}
+                                whatsappUrl={whatsappUrl}
                             />
                         </motion.div>
                     </motion.div>
                 )}
             </AnimatePresence>
-
 
         </main>
     );

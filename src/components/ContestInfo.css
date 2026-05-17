@@ -1,0 +1,88 @@
+.contest-info {
+    padding: 26px clamp(18px, 3vw, 36px);
+    border-radius: 24px;
+    background: rgba(10, 14, 26, 0.72);
+    border: 1px solid rgba(214, 179, 90, 0.25);
+    box-shadow: 0 16px 40px rgba(5, 8, 20, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contest-info__content {
+    flex: 1 1 320px;
+}
+
+.contest-info h3 {
+    margin: 0 0 8px;
+    font-size: 22px;
+    color: #f7e7b0;
+}
+
+.contest-info p {
+    margin: 0;
+    color: rgba(247, 231, 176, 0.8);
+}
+
+.contest-info__button {
+    border: none;
+    cursor: pointer;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 15px;
+    background: linear-gradient(135deg, #d6b35a, #f2d287);
+    color: #0b1224;
+    box-shadow: 0 12px 30px rgba(214, 179, 90, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contest-info__button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 36px rgba(214, 179, 90, 0.3);
+}
+
+.contest-info__table {
+    margin-top: 16px;
+    padding: 14px 16px 16px;
+    border-radius: 16px;
+    background: rgba(12, 18, 32, 0.7);
+    border: 1px solid rgba(214, 179, 90, 0.2);
+}
+
+.contest-info__table h4 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #f7e7b0;
+}
+
+.contest-info__table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    color: rgba(247, 231, 176, 0.85);
+}
+
+.contest-info__table th,
+.contest-info__table td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid rgba(214, 179, 90, 0.15);
+}
+
+.contest-info__table thead th {
+    color: #f7e7b0;
+    font-weight: 600;
+}
+
+.contest-info__table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+@media (max-width: 520px) {
+    .contest-info__table table {
+        font-size: 13px;
+    }
+}

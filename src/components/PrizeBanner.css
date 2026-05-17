@@ -216,3 +216,9 @@
     }
 }
 
+.next-level {
+    margin: 0;
+    font-size: 13px;
+    color: rgba(247, 231, 176, 0.75);
+    text-align: center;
+}
