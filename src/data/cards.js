@@ -1,8 +1,9 @@
-import cardfree from "../assets/cardfree.png";
+
 import id1a from "../assets/id1a.png";
 import id1b from "../assets/id1b.png";
 
 import id2a from "../assets/id2a.png";
+import id2b from "../assets/id2b.png";
 
 import id3a from "../assets/id3a.png";
 import id3b from "../assets/id3b.png";
@@ -66,7 +67,7 @@ export const cards = [
         revealText: "Cesaret ve zühd sahibi. Kabilesinin yarısı onun sayesinde müslüman oldu. Efendimiz(asm) ona bazen \"dostum\" diye seslenirdi.",
         source: "https://drive.google.com/file/d/11IC4-Hhf7W57nekvMZg6Cxh4RLIg0fZm/view",
         frontImage: id2a,
-        revealImage: cardfree
+        revealImage: id2b
     },
     {
         id: 3,
