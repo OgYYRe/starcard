@@ -175,7 +175,7 @@ export const cards = [
         title: "Es-Sıddîka ",
         traits: [],
         revealName: "Hz. Âişe (r.anha)",
-        revealText: "İlim, iffet, ibadet abidesi. Kadınlık aleminin mürşidesi,sünnetin nakilcisi.",
+        revealText: "İlim, iffet, ibadet abidesi. Kadınlık aleminin mürşidesi, sünnetin nakilcisi.",
         source: "https://drive.google.com/file/d/17XSJB0mTFZUk3N5zlWubzGkihmyLkAhL/view",
         frontImage: id13a,
         revealImage: id13b
