@@ -163,7 +163,7 @@
     left: 16px;
     right: 16px;
     margin: 0;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.2;
     max-width: 100%;
     display: -webkit-box;
@@ -290,4 +290,67 @@
     .reveal-side h2 {
         font-size: 24px;
     }
+}
+
+/* Liste görünümü - ilk ekrandaki küçük kartlar */
+.card-list-view .card-title {
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.card-list-view .traits {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.card-list-view .card-overlay.reveal h2 {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.card-list-view .card-overlay.reveal p {
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+/* Modal görünümü - karta tıklanınca büyüyen kart */
+.card-modal-view .card-title {
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.card-modal-view .traits {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.card-modal-view .card-overlay.reveal h2 {
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.card-modal-view .card-overlay.reveal p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* Reveal görünümü - seçildikten sonra dönen kartın arka yüzü */
+.card-reveal-view .card-title {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.card-reveal-view .traits {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.card-reveal-view .card-overlay.reveal h2 {
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.card-reveal-view .card-overlay.reveal p {
+    font-size: 18px;
+    line-height: 1.5;
 }

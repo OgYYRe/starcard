@@ -21,8 +21,8 @@ function StarCard({
 
     const cardVisual = (
         <div
-            className={`star-card ${variant === "modal" ? "modal-card" : ""} ${
-                isConfirmed ? "flipped confirmed" : ""
+            className={`star-card ${variant === "modal" ? "modal-card card-modal-view" : "card-list-view"} ${
+                isConfirmed ? "flipped confirmed card-reveal-view" : ""
             }`}
         >
             <div className="card-inner">
