@@ -29,14 +29,17 @@ function StarCard({
                 <div className={`card-face card-front ${hasTraits ? "" : "empty"}`}>
                     <div
                         className={`card-art ${
-                            card.frontImage ? "" : "placeholder"
+                            card.frontImage ? "with-image" : "placeholder"
                         }`}
-                        style={
-                            card.frontImage
-                                ? { backgroundImage: `url(${card.frontImage})` }
-                                : undefined
-                        }
                     >
+                        {card.frontImage && (
+                            <img
+                                className="card-image"
+                                src={card.frontImage}
+                                alt=""
+                                loading="lazy"
+                            />
+                        )}
                         {hasOverlay && (
                             <div className="card-overlay">
                                 {hasTitle && (
@@ -56,14 +59,17 @@ function StarCard({
                 <div className={`card-face card-back ${hasReveal ? "" : "empty"}`}>
                     <div
                         className={`card-art ${
-                            card.revealImage ? "" : "placeholder"
+                            card.revealImage ? "with-image" : "placeholder"
                         }`}
-                        style={
-                            card.revealImage
-                                ? { backgroundImage: `url(${card.revealImage})` }
-                                : undefined
-                        }
                     >
+                        {card.revealImage && (
+                            <img
+                                className="card-image"
+                                src={card.revealImage}
+                                alt=""
+                                loading="lazy"
+                            />
+                        )}
                         {hasReveal && (
                             <div className="card-overlay reveal">
                                 {name && <h2>{name}</h2>}

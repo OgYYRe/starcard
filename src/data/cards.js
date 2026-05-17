@@ -47,8 +47,6 @@ import id15b from "../assets/id15b.png";
 import id16a from "../assets/id16a.png";
 import id16b from "../assets/id16b.png";
 
-
-
 export const cards = [
     {
         id: 1,
@@ -122,7 +120,7 @@ export const cards = [
     },
     {
         id: 8,
-        title: "Allah'ın Kılıcı, Seyfullah",
+        title: "Allah'ın Kılıcı (Seyfullah)",
         traits: ["Askeri deha", ],
         revealName: "Halid bin Velid (ra)",
         revealText: "Seyfullah (Allah'ın kılıcı) olarak tanınır. Cesaret, cihad ve askeri deha.",
@@ -173,7 +171,7 @@ export const cards = [
     {
         id: 13,
         title: "Es-Sıddîka ",
-        traits: [],
+        traits: ["Hadis Rivayeti", "İffet", "İbadet"],
         revealName: "Hz. Âişe (r.anha)",
         revealText: "İlim, iffet, ibadet abidesi. Kadınlık aleminin mürşidesi, sünnetin nakilcisi.",
         source: "https://drive.google.com/file/d/17XSJB0mTFZUk3N5zlWubzGkihmyLkAhL/view",
