@@ -93,7 +93,7 @@ export const cards = [
     {
         id: 5,
         title: "Ebu Huzeyfe",
-        traits: ["Korkusuz"],
+        traits: ["Korkusuz, Gözüpek"],
         revealName: "Ebu Huzeyfe bin Utbe (ra)",
         revealText: "Gözüpek ve korkusuz bir sahabi. Habeşistan'a giden ilk kafilede yer aldı.",
         source: "https://drive.google.com/file/d/17o1b8qKafrzWbyZqjLxX0z1xSUD4Sa4j/view",
