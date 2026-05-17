@@ -66,8 +66,6 @@ Ayrıca kaynak olarak
 ${selectedSource} 
 linkini kullanacağım.
 
-Ayrıca, tüm Sahabelere bu PDF den ulasabilecegimi biliyorum
-www.abc.com/sahabeler.pdf
 Teşekkürler!
 `;
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
