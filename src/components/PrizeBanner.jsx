@@ -1,7 +1,7 @@
 import "./PrizeBanner.css";
 
 function PrizeBanner() {
-    const participantCount = 0;
+    const participantCount = 1;
     const maxParticipants = 15;
     const cappedCount = Math.min(Math.max(participantCount, 0), maxParticipants);
     const progressPercent = Math.round((cappedCount / maxParticipants) * 100);
