@@ -58,12 +58,15 @@ function App() {
     const whatsappNumber = "+41779179855";
     const selectedName = selectedCard?.revealName?.trim() || "Starcard";
     const selectedSource = selectedCard?.source?.trim() || "kaynak belirtilmedi";
+    const selectedSource2 = "https://drive.google.com/file/d/1iZS_lcqSthu70jUHmp33TQLzZsaJuCcJ/view?usp=drive_link";
     const whatsappMessage = `Merhaba Oğuzhan abi, benim adım ${studentName.trim()}.
 ${mentorName.trim()} abinin öğrencisiyim.
 Yarışmaya katılıyorum ve benim seçtiğim yıldız: ${selectedName}.
 Katılımcı sayısına beni de dahil edebilir misin?
-Ayrıca kaynak olarak 
+Kaynak olarak;
 ${selectedSource} 
+ve tüm sahabeler için
+${selectedSource2}
 linkini kullanacağım.
 
 Teşekkürler!
