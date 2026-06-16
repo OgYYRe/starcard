@@ -46,6 +46,11 @@ function ContestInfo({ onJoin }) {
             <button type="button" className="contest-info__button" onClick={onJoin}>
                 Yarışmaya Katıl
             </button>
+
+            <button type="button" className="contest-info__link-button" onClick={() => window.open("https://sahabeleri-taniyalim.netlify.app/", "_blank")}>
+                Sesli Kaynaklar için tıkla
+            </button>
+
         </section>
     );
 }

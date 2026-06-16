@@ -107,6 +107,10 @@ function PrizeBanner() {
                     <p className="next-level">{nextThresholdNote}</p>
                 )}
             </div>
+
+
+
+
         </section>
     );
 }

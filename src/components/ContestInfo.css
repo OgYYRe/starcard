@@ -44,6 +44,23 @@
     box-shadow: 0 16px 36px rgba(214, 179, 90, 0.3);
 }
 
+.contest-info__link-button{
+    border: none;
+    cursor: pointer;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 15px;
+    background: linear-gradient(135deg, #f2d287, #d6b35a);
+    color: #0b1224;
+    box-shadow: 0 12px 30px rgba(214, 179, 90, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.contest-info__link-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 36px rgba(214, 179, 90, 0.3);
+}
+
 .contest-info__table {
     margin-top: 16px;
     padding: 14px 16px 16px;
