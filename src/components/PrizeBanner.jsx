@@ -1,8 +1,12 @@
 import "./PrizeBanner.css";
 
 function PrizeBanner() {
-    const participantCount = 3;
-    // Cemal Sadullah, Ammar Abdullah abi, Saffet Muhammed
+    const participantCount = 5;
+    // Cemal Sadullah,
+    // Ammar Abdullah abi,
+    // Saffet Muhammed,
+    // Mustafa MuhammedR. abi,
+    // Ensar MuhammedR. abi,
     const maxParticipants = 15;
     const cappedCount = Math.min(Math.max(participantCount, 0), maxParticipants);
     const progressPercent = Math.round((cappedCount / maxParticipants) * 100);
