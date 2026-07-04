@@ -7,6 +7,7 @@ function PrizeBanner() {
     // Saffet Muhammed,
     // Mustafa MuhammedR. abi,
     // Ensar MuhammedR. abi,
+    // Suat Sadullah abi
     const maxParticipants = 15;
     const cappedCount = Math.min(Math.max(participantCount, 0), maxParticipants);
     const progressPercent = Math.round((cappedCount / maxParticipants) * 100);
