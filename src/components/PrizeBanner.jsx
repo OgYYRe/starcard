@@ -1,7 +1,7 @@
 import "./PrizeBanner.css";
 
 function PrizeBanner() {
-    const participantCount = 5;
+    const participantCount = 6;
     // Cemal Sadullah,
     // Ammar Abdullah abi,
     // Saffet Muhammed,
